@@ -1,0 +1,29 @@
+body{
+    margin: auto;
+    width: 1000px;
+    background-color: rgba(165, 168, 168, 0.512)
+}
+
+span{
+    color: rgb(222, 108, 127);
+    font-style: italic;
+}
+h1{
+    color: rgb(107, 157, 215);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: wavy;
+    text-transform: capitalize;
+    text-align: center;}
+header a{
+    text-decoration: none;
+    color: rgb(98, 139, 216);
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: larger;
+}
+header a:hover{
+    background-color: rgba(90, 90, 100, 0.637);
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energie renouvelable</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <div class="container">
+  <div class="header">
+   
+    <h1>Energies renouvelables</h1>
+    <div class="barre_recherche">
+    <input type="text" id="searchInput" placeholder="solaire, eolien...">
+    <button onclick="rechercher()">Rechercher</button>
+</div>
+    <nav>
+        
+            <button onclick="display();">Vote</button>
+            <button><a href="contact.html">📞Contact</a></button>
+            <button><a href="histoire.html">Histoire</a></button>
+        
+    </nav>
+
+  </div>
+  
+  <div class="aside">
+
+       <h3>📚 Pour aller plus loin</h3>
+    <ul>
+        <li><strong> Institutions</strong>
+            <ul>
+                <li><a href="https://www.ademe.fr/" target="_blank">ADEME</a></li>
+                <li><a href="https://www.enr.fr/" target="_blank">Syndicat des énergies renouvelables</a></li>
+            </ul>
+        </li>
+        <li><strong> Comprendre</strong>
+            <ul>
+                <li><a href="https://www.fun-mooc.fr/fr/cours/les-energies-renouvelables/" target="_blank">MOOC-Les énergies renouvelables</a></li>
+                <li><a href="https://www.youtube.com/c/LeRéveilleur" target="_blank">Chaîne Le Réveilleur (YouTube)</a></li>
+            </ul>
+        </li>
+        <li><strong> En direct</strong>
+            <ul>
+                <li><a href="https://www.rte-france.com/eco2mix/" target="_blank">RTE-production EN temps réel</a></li>
+            </ul>
+        </li>
+        <li><strong> Pour mon domicile</strong>
+            <ul>
+                <li><a href="https://www.maprimerenov.gouv.fr/" target="_blank">Aides MaPrimeRénov'</a></li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>les types d'énergie</h2>
+   <main>
+    <figure id="i1">
+   <img src="Biomasse.jpeg" alt="biomasse">
+
+   <figcaption><a href="biomasse.html">voir plus:biomasse</a></figcaption>
+   </figure> 
+   <figure id="i2">
+    <img src="energie_hydraulique.jpeg" alt="energie_hydraulique">
+    <figcaption><a href="water.html">voir plus:energie hydraulique</a></figcaption>
+   </figure>
+   <figure id="i3">
+    <img src="energie_solaire.jpeg" alt="energie_solaire.jpeg">
+    <figcaption><a href="solar.html">voir plus:energie solaire</a></figcaption>
+   </figure>
+   <figure id="i4">
+    <img src="energie_éolienne2.jpeg" alt="energie_éolienne">
+    <figcaption><a href="wind.html">voir plus:energie éolienne</a></figcaption>
+   </figure>
+   
+  </div>
+  <div class="footer" id="footer">
+    <p>copyright (©) 2025-2026 ISIMS</p>
+    <div id="vote" hidden>
+        <h2>Votez pour votre énergie préférée</h2>
+    <form id="formVote" onsubmit="return verifier();">
+        <label>Votre nom :</label>
+        <input type="text" id="nom" placeholder="ex: Ali"><br>
+        <span class="error" id="erreurNom" style="color: rgb(204, 73, 73);"></span><br>
+
+        <label>Choisissez une énergie :</label>
+        <div class="radio-group">
+            <label><input type="radio" name="energie" value="Solaire" id="1"> Solaire</label>
+            <label><input type="radio" name="energie" value="Éolien" id="2"> Éolien</label>
+            <label><input type="radio" name="energie" value="Hydraulique" id="3">Hydraulique</label>
+            <label><input type="radio" name="energie" value="Biomasse" id="4">Biomasse</label><br>
+        </div>
+        <span class="error" id="erreurEnergie" style="color: rgb(204, 73, 73);"></span><br>
+
+        <label><input type="checkbox" id="accept"> J'accepte de voter</label><br>
+        <span class="error" id="erreurAccept" style="color: rgb(204, 73, 73);"></span><br>
+
+        <button type="submit" >Voter</button>
+        
+    
+       
+    </form>
+</div>
+  </div>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

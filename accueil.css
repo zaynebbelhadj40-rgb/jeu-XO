@@ -1,0 +1,188 @@
+.container {  display: grid;
+  grid-template-columns: 217.6px 382.4px 100px 200px;
+  grid-template-rows: 132px 68px 100px 350px 90px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+  
+    box-shadow: -10px -10px 60px  rgb(83, 81, 81);
+}
+
+.header { grid-area: header;
+     background: linear-gradient(160deg,#1B5E20 , bisque);
+     position: relative;
+
+
+position: relative;
+ }
+.header h1{
+    text-align: center;
+    color:bisque;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30px;
+}
+.header img{
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    left: 3px;
+
+}
+.aside { grid-area: aside; 
+background-color: rgb(249, 233, 214);;
+}
+.aside a{
+    color:#388E3C ;
+}
+.aside a:hover{
+    color: #66BB6A;
+}
+
+.main { grid-area: main;
+background-color: rgb(249, 233, 214);
+ box-shadow: -5px -5px 60px  rgb(166, 163, 163);}
+
+.footer { grid-area: footer; 
+    
+    background: linear-gradient(20deg,#1B5E20 , bisque);
+}
+
+body {
+  width: 900px;              
+  margin: 0;             
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+ background-color:#F4F8EC;
+ color: #2C3E2D;
+}
+figure{
+    background-color: rgb(227, 224, 223);
+    width: 250px;
+    height: 165px;
+    padding-top: 30px;
+    text-align: center;
+    line-height:45px ;
+    box-shadow: -3px 3px 20px rgb(149, 149, 149);
+    border-radius: 5px;
+    display: inline-block;
+}
+figcaption{
+    color: rgb(101, 100, 100);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#i1:hover{
+    animation-name: zoom;
+    animation-duration: 3s;
+}
+@keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+    #i2:hover{
+    animation-name: rotation;
+    animation-duration: 3s;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(70deg);
+    }
+}
+    #i3:hover{
+    animation-name: skew;
+    animation-duration: 3s;
+}
+@keyframes skew{
+    from{
+        transform: skew(0deg);
+    }
+    to{
+        transform: skew(20deg);
+    }
+}
+    #i4:hover{
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{opacity: 0.2;}
+}
+.main h2{
+    text-align:center;
+            color: #2E7D32;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            font-style: oblique;
+            background-color: rgb(250, 215, 235);
+            box-shadow: -3px 3px 20px rgb(149, 149, 149);
+            border-radius: 10px;
+             width: 500px;
+             margin: 10px auto  ;
+}
+.main h2{
+           animation-name: couleur;
+           animation-duration: 5s;
+           animation-iteration-count:infinite;}
+@keyframes couleur
+{
+    from {color:#2E7D32 }
+    to {color: rgb(0, 0, 0);}
+}
+.main img{
+    width: 200px;
+    height: 100px;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color:rgb(243, 231, 216);
+    color: #2E7D32;
+    border-radius: 5px;
+    
+}
+button a{
+    color: #2E7D32;
+    text-decoration: none;
+}
+.footer p{
+    text-align: center;
+    color:bisque;
+
+}
+#vote h2{
+    margin-left: 15px;
+    color:black;
+}
+#formVote
+{
+    margin-left: 15px;
+}
+.barre_recherche{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    
+}
