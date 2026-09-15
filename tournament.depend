@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1765109571 source:c:\users\lenovo\desktop\projet_c\tournament\fileio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileio.h"
+	"players.h"
+	"matches.h"
+
+1765109265 c:\users\lenovo\desktop\projet_c\tournament\fileio.h
+	"players.h"
+	"matches.h"
+
+1765108735 c:\users\lenovo\desktop\projet_c\tournament\players.h
+
+1765109191 c:\users\lenovo\desktop\projet_c\tournament\matches.h
+
+1765109536 source:c:\users\lenovo\desktop\projet_c\tournament\game.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"game.h"
+	"players.h"
+	"matches.h"
+
+1765109231 c:\users\lenovo\desktop\projet_c\tournament\game.h
+	"players.h"
+	"matches.h"
+
+1765109461 source:c:\users\lenovo\desktop\projet_c\tournament\matches.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"matches.h"
+	"players.h"
+

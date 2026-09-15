@@ -1,0 +1,2 @@
+PLAYERS 1;lili;1;0;0 2;lala;0;1;0 3;boubou;1;0;0 4;loulou;0;1;0 5;ahmed;1;1;1 6;sara;1;1;1
+MATCHES 1;1;4;1 2;2;3;2 3;5;6;1 4;5;6;2 5;5;6;3
